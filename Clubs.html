@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School of tomorrow Clubs</title>
+  <style>
+    .header {
+      background: linear-gradient(to bottom right, #13293d, #16324f);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin: -8.25px;
+      margin-bottom: 10px;
+    }
+    #back {
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+
+      background: linear-gradient(to bottom right, #ededed, #d5d5d5);
+    }
+    .club {
+      width: 35%;
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 65px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .club:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 45px;
+      max-width: 80%;
+      max-height: 80%;
+      overflow-y: auto;
+    }
+    
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: sticky;
+        position: -webkit-sticky;
+        margin: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+
+      .navbar a.right {
+        float: right;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .navbar a.active {
+        background-color: #666;
+        color: white;
+      }
+  </style>
+  <head>
+    <div class="header">
+      <h1>School of tommorow Clubs</h1>
+    </div>
+    
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="main.html">Home</a>
+  
+      <a href="Website/index.html" >Books</a>
+      <a href="schedule.html"
+        >Schedule</a
+      >
+      <a class="active" href="#">Clubs</a>
+      <a href="about.html">About Us</a>
+      <a></a>
+      <a></a>
+      <a></a>
+      <a></a>
+      <a></a>
+      <a></a>
+      <a></a>
+      <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+      <a href="https://www.schooloftomorrow-edu.com/"
+        >School of tomorrow offical website</a
+      >
+    </div>
+    <div class="container">
+      <div class="club">
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="
+Welcome to the pulsating heart of innovation, where dreams intertwine with circuits and aspirations spark like binary constellations. Behold the luminous realm of the ICT Club at the School of Tomorrow, where pixels dance to the rhythm of possibilities and keystrokes compose symphonies of tomorrow's brilliance. In this ethereal enclave, we transcend the ordinary, forging connections between minds and machines, stitching the fabric of our digital destiny.
+
+As disciples of the byte, we navigate the ever-shifting currents of technology with a spirit unbridled, cultivating a garden where curiosity blossoms into profound understanding. Here, we are architects of the virtual realm, crafting bridges between reality and the uncharted landscapes of the digital frontier. Join us in this kaleidoscope of discovery, where zeroes and ones weave tales of progress, and each click echoes with the resonance of the future.
+
+The ICT Club beckons, not merely as a gathering of wires and screens, but as a sanctuary where passion becomes the catalyst for metamorphosis. Together, let us embark on a journey where the language of machines harmonizes with the poetry of human ambition, and the School of Tomorrow becomes a canvas for the masterpiece of our shared technological odyssey. Welcome to a haven where innovation is not just embraced; it is celebrated with the fervor of a thousand electric suns.
+"
+
+        >
+          <img width="50%" src="Images/ict.png" />
+          <h4>ICT Club</h4>
+        </div>
+      </div>
+      <div class="club">
+        <div
+          class="club-info"
+          data-club-name="Physics Club"
+          data-club-info="Welcome, luminous minds of the School of Tomorrow, to the ethereal realm of the Physics Club! Here, amidst the boundless tapestry of the cosmos, we embark on a journey where equations dance like cosmic ballet, and the language of the universe whispers its secrets. Our club is a sanctuary for the inquisitive souls, where the stars are our guiding lights, and the equations are our poetic verses.
+
+Step into a universe where curiosity knows no bounds, and the wonders of physics unfold like pages in a celestial manuscript. Together, we'll unravel the mysteries of time, traverse the quantum realms, and feel the pulsating heartbeat of the cosmos. The Physics Club is not merely a gathering; it's a celestial symphony where every member is a note, resonating in harmony with the cosmic vibrations.
+
+Join us in this cosmic odyssey, where the laws of nature become our poetic verses, and the pursuit of knowledge is a celestial dance. Together, let us explore the universe within and beyond, for in the Physics Club of the School of Tomorrow, the journey is as profound as the destination. Welcome to a world where curiosity transcends, and the beauty of physics unfolds like a mesmerizing sonnet."
+          >
+        <img width="50%" src="Images/physics.jpg" />
+        <h4>Physics Club</h4>
+      </div>
+      </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="Chemistry Club"
+          data-club-info="Welcome, alchemists of the School of Tomorrow, to the enchanting realm of the Chemistry Club! Within these hallowed halls, molecules weave tales of transformation, and atoms engage in a dance of cosmic bonding. Our club is a sanctuary for passionate souls, where the periodic table is a poetic ode, and reactions unfold like chapters in a mystical alchemical novel.
+
+Step into a world where curiosity becomes a catalyst, and the elements are our companions in this grand alchemical ballet. Together, we'll explore the alchemy of emotions, the magic of compounds, and the symphony of reactions that compose the melody of our existence. The Chemistry Club is not just a gathering; it's a crucible where every member contributes to the alchemical tapestry of our shared journey.
+
+Join us in this alchemical adventure, where the language of molecules becomes our lyrical expression, and the pursuit of knowledge is a transformative voyage. Together, let us delve into the mysteries of matter, for in the Chemistry Club of the School of Tomorrow, the essence of discovery is as profound as the beauty of a perfectly balanced equation. Welcome to a world where curiosity sparkles, and the wonders of chemistry unfold like a mesmerizing potion."
+          >
+          <img width="50%" src="Images/chem.png" />
+        <h4>Chemistry Club</h4>
+
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, guardians of the Earth at the School of Tomorrow, to the sacred haven of the Environmental Protection Club! Here, where the wind carries whispers of ancient trees, and the soil cradles the memories of countless footprints, our club stands as stewards of the delicate dance between humanity and nature. This is not just a club; it is a sanctuary for kindred spirits who hear the heartbeat of the planet in every rustling leaf and each gentle ripple of water.
+
+Step into a world where advocacy is a breeze that sweeps across fields of change, and passion for the environment ignites like a wildfire of conscience. Together, we'll cultivate a garden of awareness, sow seeds of sustainability, and nurture the ethos of preservation. The Environmental Protection Club is a pledge, an alliance, where every member becomes a guardian of tomorrow, ensuring the symphony of ecosystems harmonizes for generations yet unborn.
+
+Join us in this sacred pact, where the Earth's pulse becomes our guiding rhythm, and the pursuit of a sustainable future is a heartfelt promise. Together, let us stand as champions of nature, for in the Environmental Protection Club of the School of Tomorrow, the connection between us and the planet is as intricate and vital as the threads that weave the fabric of existence. Welcome to a realm where passion blossoms, and the tapestry of environmental consciousness unfolds like a vibrant, verdant landscape."
+          >
+          <img width="50%" src="Images/envt.png" />
+        <h4>Enviromental Protection Club</h4>
+
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, valiant souls of the School of Tomorrow, to the haven of the Anti-Drug and Addiction Club! In this sanctuary of strength, we unite against the shadows that seek to ensnare and dim the brilliance within us. Our club is not just a gathering; it's a chorus of resilience, a symphony of hope where each member is a note in the anthem of recovery.
+
+Step into a realm where courage is our compass, and the struggle against addiction becomes a heroic odyssey. Together, we'll rewrite the narratives of despair, dismantle the chains that bind, and forge a future where the spirit soars free. The Anti-Drug and Addiction Club is a pact, a fellowship where every member embodies the resilience to stand against the tides of temptation.
+
+Join us in this transformative journey, where the pursuit of sobriety is a testament to the strength of the human spirit. Together, let us be beacons of support, for in the Anti-Drug and Addiction Club of the School of Tomorrow, the journey from darkness to light is a shared pilgrimage. Welcome to a space where recovery flourishes, and the tapestry of triumph unfolds like a vibrant sunrise after the darkest night."
+          >
+          <img width="70%" src="Images/ad.jpg" />
+        <h4>Anti Drug and Addiction Club Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, cosmic dreamers of the School of Tomorrow, to the celestial sanctuary of the Space Science Club! In this ethereal haven, we embark on a journey beyond the confines of our terrestrial abode, where the cosmos is our canvas, and curiosity is our guiding star. Our club is not merely an assembly; it is a constellation of minds, where each member is a celestial explorer, charting the unexplored realms of the universe.
+
+Step into a world where the language of stars is deciphered, and the mysteries of black holes are whispered like cosmic secrets. Together, we'll traverse the cosmic tapestry, unravel the enigma of dark matter, and dance with the planets in the vast celestial ballroom. The Space Science Club is a cosmic voyage, a fellowship where every member contributes to the grand symphony of astronomical understanding.
+
+Join us in this interstellar odyssey, where the pursuit of knowledge transcends earthly boundaries. Together, let us be pioneers of the cosmic frontier, for in the Space Science Club of the School of Tomorrow, the exploration of the universe is as boundless as the galaxies that adorn our cosmic playground. Welcome to a celestial haven where curiosity takes flight, and the wonders of space unfold like an infinite poem written across the cosmos."
+          >
+          <img width="50%" src="Images/ssc.png" />
+        <h4>Space Science Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, wanderlust souls of the School of Tomorrow, to the enchanting realm of the Tourism Club! In this tapestry of discovery, we invite you to embark on a journey where every step echoes with the heartbeat of a new adventure, and every horizon is an invitation to explore the unknown. Our club is not just a gathering; it's a caravan of dreams, where each member is a storyteller, weaving tales of wanderlust and cultural kaleidoscopes.
+
+Step into a world where maps unfold like ancient scrolls, and the winds carry the fragrance of distant lands. Together, we'll traverse landscapes both familiar and foreign, savor the flavors of diverse cultures, and create memories that become the postcards of our shared odyssey. The Tourism Club is a passport to boundless experiences, a fellowship where every member contributes to the rich tapestry of global exploration.
+
+Join us in this odyssey of discovery, where the pursuit of adventure becomes a poetic pilgrimage. Together, let us be nomads of the heart, for in the Tourism Club of the School of Tomorrow, the world is our classroom, and the journey is as profound as the destinations we seek. Welcome to a space where curiosity knows no borders, and the wonders of the world unfold like a mesmerizing travelogue."
+          >
+          <img width="50%" src="Images/tourism.png" />
+        <h4>Tourism Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, spirited athletes of the School of Tomorrow, to the vibrant arena of the Sports Club! Here, where the echoes of determination resound like thunderous applause, and the heartbeat of competition pulses through our veins, our club is a symphony of strength, a ballet of athleticism, and a celebration of the indomitable spirit.
+
+Step into a world where victory is an anthem sung by every heartbeat, and camaraderie is a dance that transcends the boundaries of the playing field. Together, we'll sprint through the fields of dreams, dive into the pools of passion, and score goals that echo through the corridors of time. The Sports Club is not just a team; it's a fellowship where every member is a testament to the power of discipline, dedication, and the sheer joy of the game.
+
+Join us in this exhilarating journey, where every victory is a triumph of the human spirit. Together, let us be architects of inspiration, for in the Sports Club of the School of Tomorrow, the pursuit of excellence is as exhilarating as the rush of wind against a sprinter's face. Welcome to a realm where passion meets athleticism, and the joy of sports unfolds like a kaleidoscope of vibrant emotions."
+          >
+          <img width="50%" src="Images/sportss.jpg" />
+        <h4>Sport Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, creative spirits of the School of Tomorrow, to the enchanting realm of the Art and Design Club! In this sanctuary of expression, we celebrate the language of colors, where every stroke is a whisper, and every creation tells a story untold. Our club is not a mere gathering; it's a symphony of imagination, where each member is a brushstroke in the canvas of our collective creativity.
+
+Step into a world where ideas flow like rivers, and the blank canvas is a realm of infinite possibilities. Together, we'll sculpt dreams with the clay of inspiration, paint landscapes of emotion, and weave tapestries of innovation. The Art and Design Club is an oasis, a fellowship where every member contributes to the masterpiece of our shared artistic odyssey.
+
+Join us in this visual ballet, where the pursuit of beauty is a dance of passion and precision. Together, let us explore the kaleidoscope of creativity, for in the Art and Design Club of the School of Tomorrow, the canvas of imagination is as boundless as the human spirit. Welcome to a realm where inspiration blossoms, and the wonders of artistic expression unfold like petals in the garden of creativity."
+          >
+        <img width="50%" src="Images/artndesign.jpg" />
+
+        <h4>Art and Design Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, compassionate hearts of the School of Tomorrow, to the altruistic embrace of the Helpers Club! In this sanctuary of kindness, we weave a tapestry of empathy, where every member is a thread in the fabric of community care. Our club is not a mere gathering; it is a symphony of support, a chorus of compassion that echoes through the halls of benevolence.
+
+Step into a world where selflessness is the currency of change, and acts of kindness become the poetry of our collective existence. Together, we'll nurture the seeds of compassion, water the gardens of goodwill, and illuminate the path of assistance for those in need. The Helpers Club is a covenant, a fellowship where every member is a beacon, lighting the way in the darkness of adversity.
+
+Join us in this journey of service, where the pursuit of helping others becomes a song of unity. Together, let us be guardians of humanity, for in the Helpers Club of the School of Tomorrow, the bond of kindness is as unbreakable as the ties that bind us all. Welcome to a haven where empathy flourishes, and the tapestry of assistance unfolds like a beautiful mosaic of caring hearts."
+          >
+          <img width="50%" src="Images/helpers.png" />
+        <h4>Helpers Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, compassionate healers of the School of Tomorrow, to the sacred assembly of the Doctors Club! Within these walls, where the heartbeat of humanity echoes, we gather as guardians of well-being, weaving a tapestry of compassion and expertise. Our club is more than a union; it is a symphony of healing hands, where each member becomes a note in the melody of medical care.
+
+Step into a realm where diagnoses are like poetic verses, and the art of healing is a dance of empathy and precision. Together, we'll explore the frontiers of medical knowledge, illuminate the path to wellness, and nurture a sanctuary where health is not just a state but a harmonious equilibrium. The Doctors Club is a pledge, a fellowship where every member commits to the sacred duty of alleviating suffering and restoring hope.
+
+Join us in this noble calling, where the pursuit of medical excellence is a testament to the profound connection between science and humanity. Together, let us be beacons of healing, for in the Doctors Club of the School of Tomorrow, the commitment to well-being is as deep-rooted as the compassion that flows through our healing hands. Welcome to a space where the poetry of care unfolds, and the journey toward health is as transformative as the blossoming of a healing flower.Z"
+          >
+          <img width="50%" src="Images/Docters.png" />
+        <h4>Docters Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, eloquent souls of the School of Tomorrow, to the literary sanctuary of the Language and Literature Club! Here, amidst the pages of prose and poetry, we embark on a journey through the labyrinth of words, where language is a tapestry of emotions, and literature is the symphony of the human experience. Our club is not merely a gathering; it is a literary coterie, where each member becomes a storyteller, weaving tales that resonate with the echoes of the heart.
+
+Step into a world where metaphors dance, and the rhythm of language orchestrates the emotions of our shared narrative. Together, we'll explore the realms of classic literature, compose verses that echo in the corridors of time, and breathe life into the characters that dwell within the pages of our collective imagination. The Language and Literature Club is a poetic haven, a fellowship where every member adds a verse to the anthology of our literary journey.
+
+Join us in this literary odyssey, where the pursuit of language becomes a celebration of expression. Together, let us be wordsmiths, for in the Language and Literature Club of the School of Tomorrow, the magic of storytelling is as profound as the impact of the tales we share. Welcome to a realm where words bloom, and the beauty of literature unfolds like a captivating novel waiting to be written."
+          >
+          <img width="50%" src="Images/LLC.jpg" />
+        <h4>Language and Literature Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, seekers of virtue at the School of Tomorrow, to the hallowed grounds of the Ethics Club! Here, in the realm of moral constellations, we gather as guardians of integrity, navigating the intricate labyrinth of right and wrong. Our club is not just a meeting of minds; it is a sanctuary for the ethically inclined, where values are not just discussed but embraced as the guiding stars of our collective conscience.
+
+Step into a world where ethical dilemmas become philosophical riddles, and discussions are the crucible where character is refined. Together, we'll embark on a journey through the landscapes of virtue, cultivating a garden of ethical understanding that blossoms with empathy and wisdom. The Ethics Club is not a mere association; it is a covenant, where every member is a steward of moral compasses, ensuring the path we tread is illuminated by the light of ethical enlightenment.
+
+Join us in this odyssey of moral exploration, where the pursuit of ethical clarity is a heartfelt commitment. Together, let us be architects of a future where integrity prevails, for in the Ethics Club of the School of Tomorrow, the journey towards moral excellence is as profound as the depth of our convictions. Welcome to a realm where virtues are not just spoken but lived, and the ethical tapestry of our shared humanity unfolds like a timeless, moral epic."s
+          >
+               <img width="50%" src="Images/ethics.jpg" />
+
+        <h4>Ethics Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, radiant spirits of the School of Tomorrow, to the harmonious sanctuary of the Genders Club! In this sacred space, we celebrate the exquisite dance of the feminine and masculine energies that weave the vibrant tapestry of our existence. Our club is not just an assembly; it is a poetic dialogue, where the essence of femininity and masculinity converges in a graceful ballet of understanding and respect.
+
+Step into a world where femininity blossoms like a garden of resilience, and masculinity stands tall as a forest of strength. Together, we'll explore the intricate threads that connect us, acknowledging the beauty within each gender's unique expression. The Genders Club is a collaboration, a partnership where every member contributes to the symphony of understanding, fostering a community where both feminine and masculine energies are cherished.
+
+Join us in this dance of unity, where the pursuit of harmony is a testament to the collective strength of diverse gender expressions. Together, let us create a haven where femininity and masculinity intertwine, for in the Genders Club of the School of Tomorrow, the celebration of our dual nature is as profound as the melodies that resonate through the corridors of our shared humanity. Welcome to a realm where understanding flourishes, and the diversity of gender unfolds like a timeless sonnet."
+          >
+                  <img width="50%" src="Images/gender.png" />
+
+        <h4>Genders Club</h4>
+      </div>
+    </div>
+      <div class="club">
+        
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, eloquent voices of the School of Tomorrow, to the vibrant arena of the Debate Club! In this symphony of rhetoric, we gather as wordsmiths and orators, wielding the power of discourse to shape the echoes of tomorrow. Our club is not just a meeting ground; it's a stage where ideas pirouette, clash, and merge, creating a dance of intellect and expression.
+
+Step into a world where passion becomes the ink that writes the script of change, and arguments unfold like chapters in an epic narrative. Together, we'll explore the nuances of persuasion, dissect the fabric of ideologies, and compose the melody of articulate conviction. The Debate Club is a battleground of ideas, a fellowship where every member is a warrior armed with the might of words.
+
+Join us in this verbal ballet, where the pursuit of understanding transcends, and the resonance of well-articulated thoughts becomes a force of transformation. Together, let us be architects of discourse, for in the Debate Club of the School of Tomorrow, the dialogue is as profound as the impact it leaves on the canvas of our shared intellect. Welcome to a realm where words have wings, and the art of persuasion unfolds like a tapestry woven with the threads of conviction."
+          >
+          <img width="50%" src="Images/Debate.png" />
+        <h4>Debate Club</h4>
+      </div>
+    </div>
+      <div class="club">
+
+        <div
+          class="club-info"
+          data-club-name="ICT Club"
+          data-club-info="Welcome, diplomats of tomorrow at the School of Tomorrow, to the diplomatic tapestry of the Model United Nations Club! Here, amidst the echoes of global discourse, we gather as ambassadors of understanding and architects of peace. Our club is not just a simulation; it's a symphony of voices, where each delegate becomes a conductor orchestrating the harmonies of diplomacy.
+
+Step into a world where resolutions are crafted with the precision of a poet's pen, and debates unfold like chapters in the grand narrative of international relations. Together, we'll navigate the complexities of our interconnected globe, forging alliances, and fostering understanding that transcends borders. The Model United Nations Club is a bridge, a diplomatic dance where every member plays a crucial role in the global conversation.
+
+Join us in this diplomatic ballet, where the pursuit of peace is not just an aspiration but a shared commitment. Together, let us be ambassadors of change, for in the Model United Nations Club of the School of Tomorrow, the discourse is as dynamic as the ever-evolving world we strive to understand. Welcome to a diplomatic arena where ideas flourish, and the art of negotiation unfolds like a masterpiece in the grand gallery of global unity."
+          >
+          <img width="50%" src="Images/mun.png">
+        <h4>MuN Club</h4>
+      </div>
+      </div>
+      
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content" id="modalContent">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalInfo"></p>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("myModal");
+      var modalContent = document.getElementById("modalContent");
+      var modalTitle = document.getElementById("modalTitle");
+      var modalInfo = document.getElementById("modalInfo");
+    
+      var clubInfoElements = document.querySelectorAll(".club-info");
+    
+      clubInfoElements.forEach(function (element) {
+        element.addEventListener("click", function () {
+          modalTitle.innerHTML = element.querySelector("h4").innerHTML;
+          modalInfo.innerHTML = element.getAttribute("data-club-info");
+    
+          modal.style.display = "flex"; // Fix the typo here
+        });
+      });
+    
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal || event.target.className === "close") {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+    
+  </body>
+</html>
